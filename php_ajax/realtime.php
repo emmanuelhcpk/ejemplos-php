@@ -29,7 +29,7 @@ function actualizar(){
                 }
 			
         });
-setInterval(actualizar, 3000);
+setInterval(actualizar, 10000);
 }
 
 
