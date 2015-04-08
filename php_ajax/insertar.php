@@ -48,7 +48,14 @@ $("#valor1").val('');
 
 <body>
 nombre
+<?php 
+if ($_COOKIE['contador']!= null){
+ echo "hay cookie";
+        
+}
 
+echo $_COOKIE['contador'];
+?>
 
 <input type="text" name="caja_texto" id="valor1" />
 

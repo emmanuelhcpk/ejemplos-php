@@ -1,11 +1,16 @@
 <?php 
 try{
+	include ("user.php");
+
 $nombre=$_POST['nombre'];
-$con= new PDO('mysql:hostname=localhost;dbname=prueba2',"root","");
+$user= new user($nombre);
+/*$con = new PDO("mysql:host=localhost;dbname=prueba2","root","");
+
 $sql=$con->prepare("INSERT user (nombre) values (:nom)");
 $sql->bindParam('nom',$nombre);
 $sql->execute();
-echo "insertado";
+echo "insertado";*/
+
 }
 catch(PDOException $e)
 {

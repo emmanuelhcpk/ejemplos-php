@@ -48,6 +48,10 @@ function realizaProceso(valorCaja1, valorCaja2){
 
 <body>
 
+<?php 
+setcookie('contador', "holaaa muchachos", time() + 365 * 24 * 60 * 60);
+
+ ?>
 Introduce valor 1
 
 
