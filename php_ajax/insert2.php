@@ -3,7 +3,8 @@ try{
 	include ("user.php");
 
 $nombre=$_POST['nombre'];
-$user= new user($nombre);
+$user= new user();
+$user->crear($nombre);
 /*$con = new PDO("mysql:host=localhost;dbname=prueba2","root","");
 
 $sql=$con->prepare("INSERT user (nombre) values (:nom)");

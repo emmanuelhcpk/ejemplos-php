@@ -54,7 +54,7 @@ if ($_COOKIE['contador']!= null){
         
 }
 
-echo $_COOKIE['contador'];
+//echo $_COOKIE['contador']->;
 ?>
 
 <input type="text" name="caja_texto" id="valor1" />
